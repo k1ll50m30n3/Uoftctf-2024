@@ -10,7 +10,7 @@ First, visit the website according to the given link:
 
 ![image](https://github.com/k1ll50m30n3/Uoftctf-2024/assets/69716087/c880c8f3-55c2-45e3-ade7-5c001796523f)
 
-I can immediately see its path, it seems to be a static website, so I tried to edit its path by deleting `index.html` and reloading but I didn't get anything back, so I continued to delete `src/index.html` then gets the document tree. Here I can see the files (index.html, antwerp.jpg, guam.jpg, style.css) exported in the initial web interface and in addition there is a file `funny.json` and a path `src\dont_show.json`
+Basically, I first F12 checked their source to see if there was any information, but got nothing. I looked at the path with the site to see if there were any problems, specifically if I could query other files through the path ( In fact, I noticed it's similar to the static websites I build on my localhost :v). So I tried to edit its path by deleting `index.html` and reloading but I didn't get anything back, so I continued to delete `src/index.html` then gets the document tree. Here I can see the files (index.html, antwerp.jpg, guam.jpg, style.css) exported in the initial web interface and in addition there is a file `funny.json` and a path `src\dont_show.json`
 
 ![image](https://github.com/k1ll50m30n3/Uoftctf-2024/assets/69716087/ffd2ce42-9d07-467b-a98a-536f55d20ffe)
 
