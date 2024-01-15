@@ -6,7 +6,7 @@ Check out my flag website! Author: windex
 
 https://storage.googleapis.com/out-of-the-bucket/src/index.html
 -----------------------------------------------------------------------------------------------------------------------------
-First, visit the website according to the given link:
+First, access to the website according to the given link:
 
 ![image](https://github.com/k1ll50m30n3/Uoftctf-2024/assets/69716087/c880c8f3-55c2-45e3-ade7-5c001796523f)
 
