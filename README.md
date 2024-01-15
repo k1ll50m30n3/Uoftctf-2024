@@ -1,9 +1,11 @@
 # Uoftctf-2024
-#Out of the Bucket
-Check out my flag website!
-Author: windex
-https://storage.googleapis.com/out-of-the-bucket/src/index.html
 
+# Out of the Bucket
+
+Check out my flag website! Author: windex
+
+https://storage.googleapis.com/out-of-the-bucket/src/index.html
+-----------------------------------------------------------------------------------------------------------------------------
 First, visit the website according to the given link:
 
 ![image](https://github.com/k1ll50m30n3/Uoftctf-2024/assets/69716087/c880c8f3-55c2-45e3-ade7-5c001796523f)
@@ -23,10 +25,11 @@ Looking at its content, I see it contains authentication information...hmmm I ha
 And I finally got the flag for this challenge.
 
 
-#Out of the Bucket 2
+# Out of the Bucket 2
+
 This is a continuation of "Out of the Bucket". Take a look around and see if you find anything!
 Author: windex
-
+-------------------------------------------------------------------------------------------------------------------------------------------------
 Next, for this challenge, I think I have to reuse the authentication information from the first challenge (funny.json file) that I haven't used yet.
 I noticed the information fields in the file like oauth,... and I noticed that the website path had 'storage.googleapis.com', I searched for information on the internet and got a some information about 'Google Cloud Storage with credentials'
 (`https://stackoverflow.com/questions/52808848/how-to-initialize-google-cloud-storage-with-credentials`, `https://stackoverflow.com/questions/49748910/python-download-entire-directory-from-google-cloud-storage`)
