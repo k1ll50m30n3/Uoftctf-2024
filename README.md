@@ -98,4 +98,4 @@ Finnally, I got the flag for this challenge!!!
 
 ----------------------------------------------------------------------------------------
 
-Thank you for reading. In addition, there are other challenges I will update their write-ups later!. Nice CTF
+Thank you for reading. In addition, there are other challenges I will update their write-ups later!. Nice CTF)))
