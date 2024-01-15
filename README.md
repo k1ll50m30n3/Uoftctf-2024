@@ -39,8 +39,8 @@ I noticed the information fields in the file like oauth,... and I noticed that t
 Didn't disappoint me, I found a few articles on stackoverfow, and now I can get an accurate opinion on everything I was thinking. The value fields are as shown in the article, they correspond to the value fields in the file 'funny.json'.
 My task now is to use the authentication information in the funny.json file to be able to access the file content stored on Google Cloud Storage.
 Based on the information in the article on Stackoverflow, I wrote a python code file to access Google Cloud Storage.
-
-`from google.cloud import storage
+```
+from google.cloud import storage
 from google.oauth2 import service_account
 
 credentials_dict ={
@@ -68,8 +68,8 @@ for blob in bucket_flag.list_blobs():
 	print(blob)
 	filename = blob.name.replace('/', '_') 	
 	blob.download_to_filename('flag/'+ filename) #download file to folder './flag'
-	print("download file: {}".format(blob.name))`
-
+	print("download file: {}".format(blob.name))
+```
 Run the code and get the following results:
 
 ![image](https://github.com/k1ll50m30n3/Uoftctf-2024/assets/69716087/ccdb769f-649f-4bf7-ad65-a31c0e0620ad)
