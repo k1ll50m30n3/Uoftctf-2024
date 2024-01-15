@@ -75,12 +75,17 @@ Run the code and get the following results:
 ![image](https://github.com/k1ll50m30n3/Uoftctf-2024/assets/69716087/ccdb769f-649f-4bf7-ad65-a31c0e0620ad)
 
 To explain the code:
+
 I access Google Cloud Storage through:
 `credentials = service_account.Credentials.from_service_account_info(credentials_dict
 client = storage.Client( credentials=credentials)`
+
 Next, I got information about the existing buckets on Google Cloud Storage using `buckets=list(client.list_buckets())` as you can see in the code execution results, we have 2 buckets: `flag-images` and `out-of-the-bucket` in first line.
+
 Next, I proceeded to access bucket `flag-images` because I also tried accessing bucket `out-of-the-bucket` before but didn't get anything of value.
+
 Proceed to query the blob in the bucket. blob.name includes the entire directory structure + filename, so if you want the same file name as in the bucket, you might want to extract it first (instead of replacing `/` with `_ `)
+
 After completing the download process, I checked the downloaded content in the 'flag' folder.
 
 ![image](https://github.com/k1ll50m30n3/Uoftctf-2024/assets/69716087/9048ec8d-f08d-445e-a6fa-cfd384e2ccb3)
