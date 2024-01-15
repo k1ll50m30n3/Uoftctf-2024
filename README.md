@@ -14,11 +14,11 @@ I can immediately see its path, it seems to be a static website, so I tried to e
 
 ![image](https://github.com/k1ll50m30n3/Uoftctf-2024/assets/69716087/ffd2ce42-9d07-467b-a98a-536f55d20ffe)
 
-I access the funny.json file following its path (secret/funny.json) 
+I access the funny.json file following its path (`secret/funny.json`) 
 
 ![image](https://github.com/k1ll50m30n3/Uoftctf-2024/assets/69716087/37aa62bd-66a2-4ca8-8272-2000989e8e52)
 
-Looking at its content, I see it contains authentication information...hmmm I haven't used it for now. I proceed to access the path 'src/dont_show' and my browser automatically downloaded it to my computer, then I open it with Notepad.
+Looking at its content, I see it contains authentication information...hmmm I haven't used it for now. I proceed to access the path `src/dont_show` and my browser automatically downloaded it to my computer, then I open it with Notepad.
 
 ![image](https://github.com/k1ll50m30n3/Uoftctf-2024/assets/69716087/ea1c06be-cc0f-4bd4-ba5a-52a807bd8dad)
 
@@ -31,7 +31,7 @@ This is a continuation of "Out of the Bucket". Take a look around and see if you
 Author: windex
 -------------------------------------------------------------------------------------------------------------------------------------------------
 Next, for this challenge, I think I have to reuse the authentication information from the first challenge (funny.json file) that I haven't used yet.
-I noticed the information fields in the file like oauth,... and I noticed that the website path had 'storage.googleapis.com', I searched for information on the internet and got a some information about 'Google Cloud Storage with credentials'
+I paid attention to the information fields in the file like auth_uri,token_uri,... and as well as `storage.googleapis.com` is in the site path, I searched for information related to them on the internet and got a some information about 'Google Cloud Storage with credentials'.
 (`https://stackoverflow.com/questions/52808848/how-to-initialize-google-cloud-storage-with-credentials`, `https://stackoverflow.com/questions/49748910/python-download-entire-directory-from-google-cloud-storage`)
 
 ![image](https://github.com/k1ll50m30n3/Uoftctf-2024/assets/69716087/aafb5752-36d6-498e-8941-f3abd1ca2ea5)
@@ -84,7 +84,7 @@ Next, I got information about the existing buckets on Google Cloud Storage using
 
 Next, I proceeded to access bucket `flag-images` because I also tried accessing bucket `out-of-the-bucket` before but didn't get anything of value.
 
-Proceed to query the blob in the bucket. blob.name includes the entire directory structure + filename, so if you want the same file name as in the bucket, you might want to extract it first (instead of replacing `/` with `_ `)
+Proceed to query the `blob` in the `bucket`. `blob.name` includes the entire directory structure + filename, so if you want the same file name as in the bucket, you might want to extract it first (instead of replacing `/` with `_ `)
 
 After completing the download process, I checked the downloaded content in the 'flag' folder.
 
@@ -95,3 +95,7 @@ I noticed that there is an image file '256x192_xa.png' that is different from ot
 ![image](https://github.com/k1ll50m30n3/Uoftctf-2024/assets/69716087/cd4458f2-ec5d-4dda-bb8a-8c44f3f74e72)
 
 Finnally, I got the flag for this challenge!!!
+
+----------------------------------------------------------------------------------------
+
+Thank you for reading. In addition, there are other challenges I will update their write-ups later!. Nice CTF
